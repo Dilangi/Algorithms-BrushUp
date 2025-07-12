@@ -48,10 +48,17 @@ public class DistinctHashes {
         return hash;
     }
 
+
+
     // Main method to test the solution
     public static void main(String[] args) {
-        int[] param = {1, 2, 3, 5, 5};  // Example input
+        int[] param = {1, 2, 3, 4, 5};  // Example input
 
+        getDistinctHashCount(param);
+
+    }
+
+    private static void getDistinctHashCount(int[] param) {
         int[] secretKey = generateSecretKeys(param);
         int[] hash = computeHashArray(secretKey, param);
 
